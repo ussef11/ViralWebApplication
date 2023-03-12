@@ -1,10 +1,10 @@
 import './home.css'
-import usefetch from "../Hook/UseFetch"
+import from "../Hook/UseFetch"
 import React from 'react'
 const Home = () => {
 
 
-const {Data:blog}  = usefetch("http://localhost:3001/getAllArticles")
+const {Data:blog}  = usefetch("https://viral-web-application-pl3j.vercel.app/getAllArticles")
 
 
     return ( 

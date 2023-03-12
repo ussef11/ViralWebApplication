@@ -1,5 +1,5 @@
 import './home.css'
-import from "../Hook/UseFetch"
+import usefetch from "../Hook/UseFetch"
 import React from 'react'
 const Home = () => {
 

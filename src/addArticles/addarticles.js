@@ -9,7 +9,7 @@ const Addarticles = () => {
     const [articleimg, setarticleimg] = useState();
     const [content, setcontent] = useState();
     
-    const { Data:id } = useFetch("http://localhost:3001/count");
+    const { Data:id } = useFetch("https://viral-web-application-pl3j.vercel.app/count");
 
 
   const submitHandler = (e) => {
@@ -36,7 +36,7 @@ const Addarticles = () => {
       redirect: 'follow'
     };
     
-    fetch("http://localhost:3001/addarticles", requestOptions)
+    fetch("https://viral-web-application-pl3j.vercel.app/addarticles", requestOptions)
       .then(response => response.text())
       .then(result => {alert("Done");
       window.location.replace(`http://localhost:3000/addarticles`)

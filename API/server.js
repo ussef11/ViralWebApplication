@@ -7,10 +7,10 @@ app.use(express.urlencoded({ extended: true }))
 
 require('dotenv').config();
 
-const port = process.env.port || 3001
+const port = process.env.port || 5000
 
 var corsOptions = {
-    origin: "http://localhost:3000",
+    origin: "http://koora4lives.live/",
  
   };
   

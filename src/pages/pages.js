@@ -6,7 +6,7 @@ const Pages = () => {
     const {id} = useParams()
 
 
-    const {Data} = useFetch("https://viral-web-application-pl3j-agyzf8hrl-ussef11.vercel.app/getContentbyid/${id}`)
+    const {Data} = useFetch(`https://viral-web-application-pl3j-agyzf8hrl-ussef11.vercel.app/getContentbyid/${id}`)
     return ( 
 
         <>

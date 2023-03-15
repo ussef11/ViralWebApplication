@@ -29,7 +29,7 @@ function App() {
      <Route path="/About-Us" element={<About/>} ></Route>
      <Route path="/Disclaimer" element={<Disclaimer/>} ></Route>
      <Route path="/Terms-of-Service" element={<Terms/>} ></Route>
-     <Route path="/Custom404" element={<Error/>} ></Route>
+     <Route path="/404" element={<Error/>} ></Route>
       </Routes>
       <Footer/>
       </BrowserRouter>

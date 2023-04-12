@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 const Pages = () => {
   const { id } = useParams();
 
-  const { Data } = useFetch(`http://localhost:5000/getContentbyid/${id}`);
+  const { Data } = useFetch(`https://viral-web-application-pl3j.vercel.app/getContentbyid/${id}`);
   return (
     <>
       {Data &&

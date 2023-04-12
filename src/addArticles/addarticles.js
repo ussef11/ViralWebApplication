@@ -8,7 +8,7 @@ const Addarticles = () => {
   const [articleimg, setarticleimg] = useState();
   const [content, setcontent] = useState();
 
-  const { Data: id } = useFetch("http://localhost:5000/count");
+  const { Data: id } = useFetch("https://viral-web-application-pl3j.vercel.app/count");
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -38,13 +38,13 @@ const Addarticles = () => {
     };
 
     fetch(
-      "https://viral-web-application-pl3j-agyzf8hrl-ussef11.vercel.app/addarticles",
+      "https://viral-web-application-pl3j.vercel.app/addarticles",
       requestOptions
     )
       .then((response) => response.text())
       .then((result) => {
         alert("Done");
-        window.location.replace(`http://localhost:3000/addarticles`);
+        window.location.href =  '/';
       })
       .catch((error) => console.log("error", error));
   };

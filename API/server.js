@@ -12,7 +12,6 @@ const port = process.env.port || 5000;
 var corsOptions = {
   origin: "http://koora4lives.live/",
   origin: "https://www.koora4lives.live",
-  origin: "http://localhost:3000",
 };
 
 app.use(cors(corsOptions));

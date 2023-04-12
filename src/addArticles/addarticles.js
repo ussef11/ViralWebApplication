@@ -8,7 +8,7 @@ const Addarticles = () => {
   const [articleimg, setarticleimg] = useState();
   const [content, setcontent] = useState();
 
-  const { Data: id } = useFetch("https://viral-web-application-pl3j.vercel.app/count");
+  const { Data: id } = useFetch("https://viral-web-application-pl3j-git-main-ussef11.vercel.app/count");
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -38,7 +38,7 @@ const Addarticles = () => {
     };
 
     fetch(
-      "https://viral-web-application-pl3j.vercel.app/addarticles",
+      "https://viral-web-application-pl3j-git-main-ussef11.vercel.app/addarticles",
       requestOptions
     )
       .then((response) => response.text())

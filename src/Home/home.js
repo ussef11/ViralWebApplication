@@ -2,7 +2,7 @@ import "./home.css";
 import usefetch from "../Hook/UseFetch";
 import React from "react";
 const Home = () => {
-  const { Data: blog } = usefetch("http://localhost:5000/getallarticles");
+  const { Data: blog } = usefetch("https://viral-web-application-pl3j.vercel.app/getallarticles");
 
   return (
     <>
